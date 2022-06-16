@@ -1,0 +1,113 @@
+import java.io.*;
+import java.net.*;
+
+public class Server extends Thread{
+    //initialize socket and input stream
+    private Socket socket = null;
+    private ServerSocket server = null;
+
+    // constructor with port
+    public Server(int port, String pass, String id) {
+
+
+        String IP = IPAddressReader.main();
+
+
+        System.out.println("\n\n[*] Starting Server...\n\n" +
+                "\n_____________________________________" +
+                "\n-Socket     :  "+IP+":"+port +
+                "\n-Passphrase :  "+pass +
+                "\n-Your id    :  "+id +
+                "\n_____________________________________");
+
+        // starts server and waits for a connection
+        try {
+            server = new ServerSocket(port);
+
+            System.out.println("\n\n[*] Server started. Waiting for clients ...\n");
+
+            socket = server.accept();
+            System.out.println("[*] Client connected, waiting for passphrase verification ...\n");
+
+            // to send data to the client
+            PrintStream out = new PrintStream(socket.getOutputStream());
+
+            // to read data coming from the client
+            BufferedReader reader = new BufferedReader(new InputStreamReader(
+                    socket.getInputStream()));
+
+            // to read data from the keyboard
+            BufferedReader kb = new BufferedReader(new InputStreamReader(System.in));
+
+
+            String str, str1;
+
+            str = reader.readLine();
+            if (str.equals(pass)) {
+                System.out.println("[*] Passphrase verified\n");
+                out.println("pass ok");
+
+
+            } else {
+                System.out.println("[*] Wrong passphrase from client\n");
+                out.println("bad pass");
+                System.out.println("Closing connection");
+
+            }
+
+            // server executes continuously
+            while (true) {
+
+                // repeat as long as the client
+                // does not send a null string
+
+                Thread t = new Thread(new Runnable() {
+                    public void run() {
+                        while(true) {
+                            String str1 = "";
+                            try {
+                                str1 = kb.readLine();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+
+                            // send to client
+                            out.println(id + ": " + str1);
+                        }
+                    }
+                });
+                t.start();
+
+
+                // read from client
+                while ((str = reader.readLine()) != null) {
+                    System.out.println(str);
+
+                }
+
+                // close connection
+                out.close();
+                reader.close();
+                kb.close();
+                server.close();
+                socket.close();
+
+                // terminate application
+                System.exit(0);
+
+            } // end of while
+
+
+
+
+        } catch (IOException i) {
+            System.out.println(i);
+        }
+
+    }
+
+    public static void main(int port, String passphrase, String id) {
+        Server server = new Server(port, passphrase, id);
+    }
+
+}
