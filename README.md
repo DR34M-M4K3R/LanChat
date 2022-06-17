@@ -9,7 +9,8 @@
 ### 5. [Troubleshoot](https://github.com/DR34M-M4K3R/LanChat#Troubleshoot)<br/>
 ## Downloads<br>
 
-[![java download badge](https://img.shields.io/badge/Download%20.jar-181717?style=for-the-badge&color=red&logo=java)](https://github.com/DR34M-M4K3R/Anti-AFK-kick-for-all-games/raw/main/Anti-AFK.jar)<br>
+
+[![hey](https://img.shields.io/badge/Download%20windows%20launcher-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/DR34M-M4K3R/LanChat/releases/download/v1.0.0-beta/Run_lanchat.bat) [![hey](https://img.shields.io/badge/Download%20linux%20launcher-gray?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/DR34M-M4K3R/LanChat/releases/download/v1.0.0-beta/Run_LanChat.sh) [![java download badge](https://img.shields.io/badge/Download%20.jar-181717?style=for-the-badge&color=red&logo=java)](https://github.com/DR34M-M4K3R/LanChat/raw/master/out/artifacts/LanChat_jar/LanChat.jar)<br>
 
 <br>
 
