@@ -33,8 +33,9 @@ Of course, you need [java](java.com)
 <br>
 
 ## How to use LanChat?
+When you open LanChat, type the number corresponding to the action you want: 1 to join a serer and 2 to start a server.
+There is no difference between the host and the client. The two can chat together.
 
-on any Operating System, open a terminal on the .jar directory, and type the following command: `java -jar LanChat.jar` (you need java >=11)
 ## Troubleshoot
 
 ## There is no current discovered/reported errors or bugs.
