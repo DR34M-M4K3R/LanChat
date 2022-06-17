@@ -15,7 +15,7 @@
 <br>
 
 ## About the Software
-<br>LanChat allows you to chat through your LAN. It uses sockets to get it done. I am currently adding an auto-update feature.
+<br>LanChat allows you to chat through your LAN. It uses sockets to get it done. I am currently adding an auto-update feature. You need Java >= 11.
 
 <br>
 
