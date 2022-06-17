@@ -23,13 +23,19 @@
 
 <br>
 
-### How to run the .jar file?
+### How to run the .sh file (linux)?
 
-To launch the .jar file, you need to open a terminal and type:
+First grant executable status (for the very first use):
+
 ```
-$ java -jar [file].jar
+$ chmod +x Run_LanChat.sh;
 ```
-Of course, you need [java](java.com)
+
+Then, launch the .sh file:
+```
+$ ./Run_LanChat.sh;
+```
+Of course, you need [java](java.com), you can download java JRE version 11 [here](https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&field_operating_system_target_id=All&field_architecture_target_id=All&field_java_package_target_id=401)
 
 <br>
 
