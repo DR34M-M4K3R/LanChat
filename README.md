@@ -4,7 +4,6 @@
 ## Table of content:<br/>
 ### 1. [Downloads](https://github.com/DR34M-M4K3R/LanChat#downloads)<br/>
 ### 2. [About the Software](https://github.com/DR34M-M4K3R/LanChat#about-the-software)<br/>
-### 3. [How to run the Software?](https://github.com/DR34M-M4K3R/LanChat#run-the-Software)<br/>
 ### 4. [How to use LanChat?](https://github.com/DR34M-M4K3R/LanChat#how-to-use-LanChat)<br/>
 ### 5. [Troubleshoot](https://github.com/DR34M-M4K3R/LanChat#Troubleshoot)<br/>
 ## Downloads<br>
