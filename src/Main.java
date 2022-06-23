@@ -20,11 +20,18 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*/
 
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+
+
+
         Scanner sc = new Scanner(System.in);
+        IPAddressReader.main();
+
         System.out.println(" _____________\n| LOCAL CHAT |\n _____________\n[1] - Join Server   |   [2] - Start Server");
 
         if (sc.nextLine().equals("1")){
@@ -47,7 +54,7 @@ public class Main {
             System.out.print("_________________\n\n>Port : ");
             int port = sc.nextInt();
             sc.nextLine();
-            System.out.println("Set passphrase : ");
+            System.out.println(">Set passphrase : ");
             String pass = sc.nextLine();
             System.out.print(">ID : ");
             String id = sc.nextLine();
