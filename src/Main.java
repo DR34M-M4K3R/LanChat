@@ -32,6 +32,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         IPAddressReader.main();
 
+
         System.out.println(" _____________\n| LOCAL CHAT |\n _____________\n[1] - Join Server   |   [2] - Start Server");
 
         if (sc.nextLine().equals("1")){
